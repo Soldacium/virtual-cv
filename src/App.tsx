@@ -10,7 +10,7 @@ const Menu = styled.div`
   right: 20px;
   display: flex;
   gap: 20px;
-  z-index: 100;
+  z-index: 1000;
 `;
 
 const App: React.FC = () => (

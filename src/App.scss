@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Wix+Madefor+Display:wght@400..800&display=swap");
 // Variables
 $primary-color: #3498db;
 $secondary-color: #2ecc71;
@@ -24,7 +24,7 @@ $border-color: #ddd;
 
 html,
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Wix Madefor Display", sans-serif;
   background-color: $background-color;
   color: $text-color;
   font-size: 16px;
