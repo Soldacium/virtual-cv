@@ -9,13 +9,13 @@ import { StyledLink } from "../../shared/components/styled-link/styled-link";
 const riseUp = keyframes`
   from {
     position: absolute;
-    bottom: -100%;
+    top: -200%;
     left: -50%;
     opacity: 0;
   }
   to {
     position: relative;
-    bottom: 50%;
+    top: -50%;
     left: -50%;
     opacity: 1;
   }
@@ -31,7 +31,7 @@ const PageWrapper = styled(motion.div)`
 
 const CircleWrapper = styled.div`
   position: absolute;
-  top: 80%;
+  top: 0%;
   left: 40%;
   transform: translate(-50%, -50%);
 `;
@@ -39,25 +39,22 @@ const CircleWrapper = styled.div`
 const RisingCircle = styled.div<{ delay: number; speed: number }>`
   animation: ${riseUp} ${(props) => props.speed}s ease forwards;
   animation-delay: ${(props) => props.delay}s;
+  z-index: 3;
 `;
 
 const TitleWrapper = styled.div`
   position: absolute;
   width: 100%;
   height: 100%;
-  top: -6rem;
-  font-size: 15rem;
+  top: 65vh;
+  font-size: 13vw;
   text-align: center;
   font-family: "Wix Madefor Display", sans-serif;
   font-optical-sizing: auto;
   font-weight: 900;
   font-style: normal;
-  background-color: #83008c;
-  color: transparent;
-  text-shadow: 0px 2px 3px rgba(255, 255, 255, 0.8);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
+  color: #ffffff;
+  z-index: -1;
 `;
 
 const circles: any[] = [

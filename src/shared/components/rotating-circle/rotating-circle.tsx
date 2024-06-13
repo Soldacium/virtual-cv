@@ -59,7 +59,7 @@ const Word = styled.div<{
       props.radius - Math.cos(GetRads(props.angle)) * props.radius * 0
     }px, ${
       Math.sin(GetRads(props.angle)) * props.radius * 0
-    }px) rotate(${90}deg);
+    }px) rotate(${-90}deg);
     font-size: ${props.fontSize}px;
     color: ${props.color || "black"};
     `};
